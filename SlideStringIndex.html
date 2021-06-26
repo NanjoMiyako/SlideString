@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+<title>SlideString</title>
+</head>
+<body>
+
+<span id="ImportDataFlg"></span><br>
+
+ロードするファイルを選択:<br>
+<input type="file" id="fileOnDataImport"><br>
+<button type="button" id="ImportDataOnDataImportTab" style="margin-top:10px;" onclick="ImportDataOnDataImportTab()">
+スライド文字列データをロード
+</button><br>
+<hr>
+<h2 id="SlideStringH2">文字列データ</h2>
+<hr>
+自動再生:<span id="AutoPlayFlgSpan"></span><br>
+現在の行番号:<span id="CurrentLineNoSpan"></span><br>
+行番号:<input type="text" id="JumpLineNo" size="2">
+<button type="button" id="JumpLineBtn" style="margin-top:10px;" onclick="JumpLine()">
+行ジャンプ
+</button><br>
+<button type="button" style="font-size:30px;margin-top:10px;" id="AutoPlayOnBtn" onclick="AutoPlayOn()">
+自動再生ON
+</button><br>
+<button type="button" style="font-size:30px;margin-top:10px;" id="PrevLineBtn" onclick="PrevLine()">
+一つ前の行へ
+</button><br>
+<button type="button" style="font-size:30px;margin-top:10px;" id="NextLineBtn" onclick="NextLine()">
+一つ先の行へ
+</button><br>
+
+<button type="button" style="font-size:30px;margin-top:10px;" id="AutoPlayOffBtn" onclick="AutoPlayOff()">
+自動再生OFF
+</button><br>
+<script type="text/javascript" src="SlideStringJS.js">
+</script>
+
+
+</body>
+</html>
